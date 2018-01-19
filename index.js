@@ -5,7 +5,7 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 const CORS = require('connect-cors');
 const morganLogger = require('morgan');
-const project = require('./project.config');
+const config = require('./project.config');
 
 // Initialize the Express application
 const app = express();
@@ -16,12 +16,10 @@ app.use(bodyParser.urlencoded({extended: false}));
 // logging
 app.use(morganLogger('dev'));
 
-const PORT = process.env.PORT || 8000;
-
 // ------------------------------------
 // Environment Configuration
 // ------------------------------------
-const __DEV__ = project.env === 'development';
+const __DEV__ = config.env === 'development';
 
 // ------------------------------------
 // CORS Configuration
@@ -31,5 +29,11 @@ const corsConfig = {
   methods: ['HEAD', 'GET', 'POST', 'PUT', 'DELETE'],
 };
 app.use(CORS(corsConfig));
+
+app.get('/', (req, res, next) => {
+  res.set('content-type', 'text/html');
+  res.send('HELLO, SERN!');
+  res.end();
+});
 
 module.exports = app;
