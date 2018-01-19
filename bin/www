@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+// Application entry point...server setup goes here.
+
+const http = require('http');
+const app = require('../index.js'); // The express app with configuration according to running environment
+const logger = require('../lib/logger');
+
+const PORT = parseInt(process.env.PORT, 10) || 8000;
+app.set('port', PORT);
+
+const server = http.createServer(app);
+server.listen(PORT, () => {
+  logger.info(`Server is running at localhost:${PORT}`);
+});
