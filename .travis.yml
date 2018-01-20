@@ -1,3 +1,5 @@
+notifications:
+  email: false
 sudo: false
 language: node_js
 node_js:
@@ -9,6 +11,8 @@ cache:
   yarn: true
   directories:
     - node_modules
+install:
+  - npm install -g codecov istanbul rimraf
 
 script:
   - yarn lint

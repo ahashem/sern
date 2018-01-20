@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const compress = require('compression');
-const fs = require('fs');
 const bodyParser = require('body-parser');
 const CORS = require('connect-cors');
 const morganLogger = require('morgan');

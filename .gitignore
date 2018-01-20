@@ -60,3 +60,7 @@ typings/
 #IDE
 .idea/
 .vscode
+
+#Build
+.cache/
+dist/
