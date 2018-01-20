@@ -8,9 +8,9 @@
     "build": "npm run clean && cross-env NODE_ENV=production webpack --config ./config/webpack.config.js -p",
     "test": "./node_modules/.bin/mocha --reporter spec test/**.js --exit",
     "codecov": "npm run rmrf:coverage && istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec test/**.js  --exit && codecov",
-    "rmrf:coverage": "./node_modules/.bin/rimraf ./coverage",
+    "rmrf:coverage": "rimraf ./coverage",
     "lint": "eslint . --ext .js",
-    "clean": "./node_modules/.bin/rimraf dist"
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
