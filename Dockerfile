@@ -16,7 +16,7 @@ EXPOSE 2222 80
 RUN mkdir -p ${APPLICATION_HOME}
 WORKDIR ${APPLICATION_HOME}
 ADD . ${APPLICATION_HOME}
-RUN npm install -g yarn cross-env codecov istanbul rimraf pm2
+RUN npm install -g yarn cross-env codecov istanbul rimraf pm2 webpack
 RUN yarn
 RUN yarn test
 RUN yarn build

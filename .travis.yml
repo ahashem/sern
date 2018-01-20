@@ -11,7 +11,7 @@ cache:
   directories:
     - node_modules
 install:
-  - npm install -g cross-env codecov istanbul rimraf
+  - npm install -g cross-env codecov istanbul rimraf webpack
 
 script:
   - yarn lint
