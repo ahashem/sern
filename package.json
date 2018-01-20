@@ -35,6 +35,9 @@
   "dependencies": {
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "chai-things": "^0.2.0",
     "chalk": "^2.3.0",
     "compression": "^1.7.1",
     "connect-cors": "^0.5.6",
@@ -47,6 +50,7 @@
     "passport": "^0.4.0",
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
+    "q": "^1.5.1",
     "swagger-jsdoc": "^1.9.7",
     "swagger-tools": "^0.10.3"
   },

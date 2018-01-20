@@ -5,6 +5,16 @@ node_js:
   - 8
   - 7
   - 6
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
 script:
-  - npm test
+  - yarn lint
+  - yarn test
+
+after_success:
+  - yarn codecov
+
 fail_fast: true
