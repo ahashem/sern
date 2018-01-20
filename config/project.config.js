@@ -30,4 +30,8 @@ module.exports = {
   server_uri: 'localhost',
   /** Server port number */
   server_port: 8000,
+  /** Forbidden Access - return 404 not 403 */
+  forbidden_paths: '/:url(api|lib|config)/*',
+  /** Logging status */
+  logging: true,
 };
