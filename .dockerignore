@@ -1,0 +1,10 @@
+.DS_Store
+npm-debug.log
+.idea/
+dump.rdb
+.vscode/
+public/*
+coverage/
+.cache/
+/dist/
+/node_modules/
