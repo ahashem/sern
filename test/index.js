@@ -3,13 +3,15 @@
 if (!global.Promise) {
   global.Promise = require('q');
 }
+// setup TEST environment
+require('babel-register');
 
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const chaiThings = require('chai-things');
 const {assert, expect, request, should} = chai;
-// const config = require('../project.config');
-const server = require('../server/index');
+// const config = require('../config/project.config');
+const server = require('../server/index').default;
 chai.use(chaiHttp);
 chai.use(chaiThings);
 
