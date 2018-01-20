@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/nodemon ./bin/www",
-    "test": "./node_modules/.bin/mocha --reporter spec test/**.js",
+    "test": "./node_modules/.bin/mocha --reporter spec test/**.js --exit",
     "lint": "eslint . --ext .js"
   },
   "repository": {
