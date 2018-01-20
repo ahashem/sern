@@ -1,14 +1,18 @@
 notifications:
   email: false
-sudo: false
+sudo: true
 language: node_js
 node_js:
   - node
   - 8
   - 7
-
+cache:
+  yarn: true
+  directories:
+    - node_modules
 install:
   - npm install -g cross-env codecov istanbul rimraf webpack
+  - yarn
 
 script:
   - yarn lint
