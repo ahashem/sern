@@ -9,7 +9,7 @@ const chaiHttp = require('chai-http');
 const chaiThings = require('chai-things');
 const {assert, expect, request, should} = chai;
 // const config = require('../project.config');
-const server = require('../index');
+const server = require('../server/index');
 chai.use(chaiHttp);
 chai.use(chaiThings);
 

@@ -2,9 +2,9 @@
 // Application entry point...server setup goes here.
 
 const http = require('http');
-const app = require('../index.js'); // The express app with configuration according to running environment
+const app = require('../server/index.js'); // The express app with configuration according to running environment
 const logger = require('../lib/logger');
-const config = require('../project.config');
+const config = require('../config/project.config');
 
 const PORT = config.server_port || 8000;
 app.set('port', PORT);

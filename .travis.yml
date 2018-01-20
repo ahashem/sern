@@ -12,11 +12,12 @@ cache:
   directories:
     - node_modules
 install:
-  - npm install -g codecov istanbul rimraf
+  - npm install -g cross-env codecov istanbul rimraf
 
 script:
   - yarn lint
   - yarn test
+  - yarn build
 
 after_success:
   - yarn codecov

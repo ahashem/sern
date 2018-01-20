@@ -4,7 +4,7 @@ const compress = require('compression');
 const bodyParser = require('body-parser');
 const CORS = require('connect-cors');
 const morganLogger = require('morgan');
-const config = require('./project.config');
+const config = require('../config/project.config');
 
 // Initialize the Express application
 const app = express();
