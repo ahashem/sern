@@ -1,5 +1,5 @@
 import { result, notFound, error } from 'express-easy-helper';
-import User from '../models/user.model';
+import User from '../../../orm/models/user.model';
 
 // Create a user
 export function create(req, res) {
@@ -18,10 +18,7 @@ export function create(req, res) {
 // Read a user
 export function read(req, res) {
 
-  return User.findOne({ username: req.swagger.params.username.value }, {
-    social: 0
-  }).select('-email')
-    .exec()
+  return User.findById(req.swagger.params.id.value)
     .then(notFound(res))
     .then(result(res))
     .catch(error(res));
@@ -32,13 +29,11 @@ export function read(req, res) {
 export function update(req, res) {
 
   return User.findByIdAndUpdate(
-    req.user._id, {
+    req.user.id, {
       $set: {
         username: req.body.username,
         name: req.body.name,
-        lastname: req.body.lastname,
         email: req.body.email,
-        photo: req.body.photo
       }
     }, {
       new: true,
@@ -75,12 +70,8 @@ export function updateAdmin(req, res) {
       $set: {
         username: req.body.username,
         name: req.body.name,
-        lastname: req.body.lastname,
         email: req.body.email,
-        photo: req.body.photo,
-        provider: req.body.provider,
         roles: req.body.roles,
-        status: req.body.status,
       }
     }, {
       new: true
