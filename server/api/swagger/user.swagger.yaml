@@ -86,7 +86,7 @@
 
 # Administrator
 
-/api/admin/user:
+/api/admin/users:
   x-swagger-router-controller: user.controller
 # list
   get:
@@ -115,7 +115,7 @@
       500:
         $ref: '#/responses/500'
 
-/api/admin/user/{id}:
+/api/admin/users/user/{id}:
   x-swagger-router-controller: user.controller
 # destroy
   delete:
