@@ -13,6 +13,14 @@
 
 #
 
+## Credits
+Inspired by: 
+- [MERN Stack](https://github.com/Hashnode/mern-starter), scaffolding tool which makes it easy to build isomorphic apps using Mongo, Express, React and NodeJS. It minimises the setup time and gets you up to speed using proven technologies.
+- [MEAN Stack](https://github.com/meanjs/mean), full-stack JavaScript open-source solution, which provides a solid starting point for MongoDB, Node.js, Express, and AngularJS.
+
+This repository wouldn't exist without the work and contributions in Sequalize, Swagger, Express, React, NodeJS, babel, Webpack and more.
+
+
 ## License
 
-MIT © [Ahmed Hashem](https://github.com/ahashem/sern/blob/master/LICENSE)
+[MIT © License](https://github.com/ahashem/sern/blob/master/LICENSE)
