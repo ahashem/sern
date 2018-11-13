@@ -6,7 +6,7 @@
 [![dependencies Status](https://david-dm.org/ahashem/sern/status.svg)](https://david-dm.org/ahashem/sern) 
 [![devDependencies Status](https://david-dm.org/ahashem/sern/dev-status.svg)](https://david-dm.org/ahashem/sern?type=dev)
 [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](https://raw.githubusercontent.com/ahashem/sern/master/LICENSE)
-[![Known Vulnerabilities](https://snyk.io/test/github/ahashem/sern/badge.svg)](https://snyk.io/test/github/ahashem/sern)
+[![Known Vulnerabilities](https://snyk.io/test/github/ahashem/sern/badge.svg)](https://snyk.io/test/github/ahashem/sern) [![Greenkeeper badge](https://badges.greenkeeper.io/ahashem/sern.svg)](https://greenkeeper.io/)
 
 {Sequelize, Swagger} = S, Express, React, Node
 
