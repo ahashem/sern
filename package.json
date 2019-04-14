@@ -38,7 +38,7 @@
     "express"
   ],
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^2.0.0",
     "body-parser": "^1.18.2",
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
@@ -58,7 +58,7 @@
     "passport-local": "^1.0.0",
     "q": "^1.5.1",
     "react": "^16.2.0",
-    "sequelize": "4.31.2",
+    "sequelize": "5.3.0",
     "serve-favicon": "^2.4.5",
     "swagger-jsdoc": "^1.9.7",
     "swagger-tools": "^0.10.3"
