@@ -11,7 +11,9 @@
     "codecov": "npm run rmrf:coverage && istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec test/**.js  --exit && codecov",
     "rmrf:coverage": "rimraf ./coverage",
     "lint": "eslint . --ext .js",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -61,7 +63,8 @@
     "sequelize": "4.31.2",
     "serve-favicon": "^2.4.5",
     "swagger-jsdoc": "^1.9.7",
-    "swagger-tools": "^0.10.3"
+    "swagger-tools": "^0.10.3",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -105,5 +108,6 @@
     "webpack": "^3.10.0",
     "webpack-bundle-analyzer": "^2.9.2",
     "webpack-dev-server": "^2.11.0"
-  }
+  },
+  "snyk": true
 }
