@@ -60,7 +60,7 @@
     "react": "^16.2.0",
     "sequelize": "4.31.2",
     "serve-favicon": "^2.4.5",
-    "swagger-jsdoc": "^1.9.7",
+    "swagger-jsdoc": "^3.0.0",
     "swagger-tools": "^0.10.3"
   },
   "devDependencies": {
