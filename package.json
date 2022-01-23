@@ -57,7 +57,7 @@
     "passport-google-oauth": "^1.0.0",
     "passport-local": "^1.0.0",
     "q": "^1.5.1",
-    "react": "^16.2.0",
+    "react": "^16.5.0",
     "sequelize": "4.31.2",
     "serve-favicon": "^2.4.5",
     "swagger-jsdoc": "^1.9.7",
